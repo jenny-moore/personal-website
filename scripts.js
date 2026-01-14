@@ -80,3 +80,55 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
         }
     });
 });
+
+
+// Dynamic sidebar
+// const hamburger = document.querySelector('.hamburger');
+//         const sidebar = document.querySelector('.sidebar');
+//         const overlay = document.querySelector('.overlay');
+
+//         function toggleSidebar() {
+//             hamburger.classList.toggle('active');
+//             sidebar.classList.toggle('active');
+//             overlay.classList.toggle('active');
+//         }
+
+//         hamburger.addEventListener('click', toggleSidebar);
+//         overlay.addEventListener('click', toggleSidebar);
+
+//         // Close sidebar when clicking a link
+//         document.querySelectorAll('.sidebar-nav a').forEach(link => {
+//             link.addEventListener('click', toggleSidebar);
+//         });
+
+        const hamburger = document.querySelector('.hamburger');
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.querySelector('.overlay');
+
+        function openSidebar() {
+            hamburger.classList.add('active');
+            sidebar.classList.add('active');
+            overlay.classList.add('active');
+        }
+
+        function closeSidebar() {
+            hamburger.classList.remove('active');
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+
+        hamburger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (sidebar.classList.contains('active')) {
+                closeSidebar();
+            } else {
+                openSidebar();
+            }
+        });
+
+        overlay.addEventListener('click', closeSidebar);
+
+        // Close sidebar when clicking a link
+        document.querySelectorAll('.sidebar-nav a').forEach(link => {
+            link.addEventListener('click', closeSidebar);
+        });

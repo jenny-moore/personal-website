@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles.css"/>
+        <!-- <link rel="script" href="scripts.js"/> -->
+        <title>Jenny Moore</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h1>My Website</h1>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-header">Menu</div>
+            <ul class="sidebar-nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="">Portfolio</a></li>
+                <!-- <li><a href="pages/music.html">Music</a></li> -->
+                <!-- <li><a href="pages/about.html">About Me</a></li> -->
+                <!-- <li><a href="pages/contact.html">Contact</a></li> -->
+            </ul>
+        </div>
+        <div class="overlay"></div>
+        <h1 style="font-size: 300%; color: rgb(4, 73, 84);">Jenny Moore</h1>
+
+        <section id="about">
+            <h2> Welcome to my portfolio!</h2>
+            <p style="font-size: larger;">This is essentially a much extended version of my resume. It includes details and links for all my projects, courses, and other experience.</p>
+            <p style="font-size: larger;">Feel free to email me at <a>jenny.moore at mail.utoronto.ca</a> or message me on <a href="https://www.linkedin.com/in/jenny-r-moore/" target="_blank">LinkedIn</a> for more information.</p>   
+        </section>
+
+        <section id="skills" class="row">
+            <div class="column"></div>
+            <div class="column"></div>
+
+            <h2>Skills</h2>
+            <div></div>
+            <div class="column">
+            <h3 style="">Programming Languages</h3>
+                <ul>
+                    <li><span class="skill-item" data-skill="python">Python <i>(Sqlite, PostgreSQL, Numpy, Matplotlib, Pandas, Qiskit, NVIDIA Warp, Pytorch, Librosa, SKLearn)</i></span>  
+                    <div class="dropdown">
+                        <h4>Experience with Python:</h4>
+                        <a href="#PHY479">Quantum Computing Research</a>
+                        <a href="#PHY417">Physics Based Animation</a>
+                        <a href="#CSC494">Hearing Aid Project</a>
+                        <a href="#CSC311">Machine Learning Course</a>
+                        <a href="#CSC343">Databases Course</a>
+                        <a href="#PHY408">Time Series Analysis</a>
+                        <a href="#PHY224">Practical Physics</a>
+                    </div></li>
+
+                    <li><span class="skill-item" data-skill="javascript">Javascript/Typescript <i>(HTML, CSS, React, Next.js, Prisma)</i></span>
+                        <div class="dropdown">
+                            <h4>Experience with Javascript</h4>
+                            <a href="#CSC309">Code-sharing Platform</a>
+                            <a href="https://github.com/jenny-moore/personal-website" target="_blank">This website!</a>
+                        </div>
+                    </li>
+
+                    <li><span class="skill-item" data-skill="C#">C#  <i>(Unity)</i></span>
+                        <div class="dropdown">
+                            <h4>Experience with C#</h4>
+                            <a href="https://play.unity.com/en/games/80f35d34-bea2-4b58-a7fe-49ea2140bc4e/game-jam-1-hatformer" target="_blank">Solo Game Jam: Hatformer</a>
+                            <a href="#CSC404">Video Game Design Course</a>
+                        </div>
+                    </li>
+
+                    <li><span class="skill-item" data-skill="java">Java</span>
+                        <div class="dropdown">
+                            <h4>Experience with Java</h4>
+                            <a href="#CSC207">Song Guessing Game</a>
+                        </div>
+                    </li>
+
+                    <li><span class="skill-item" data-skill="assembly">MIPS Assembly</span>
+                        <div class="dropdown">
+                            <h4>Experience with Assembly Language</h4>
+                            <a href="#CSC258">Dr. Mario Remake</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Other Technical Skills</h3>
+            <ul>
+                <li><span class="skill-item" data-skill="parallel computing">Parallel Computing</span>
+                    <div class="dropdown">
+                        <h4>Experience with Parallel Computing</h4>
+                        <a href="#PHY479">Quantum Computing Research</a>
+                        <a href="#CSC209">Systems Programming Course</a>
+                        <a href="#CSC417">Physics Based Animation</a>
+                    </div>
+                </li>
+
+                <li><span class="skill-item" data-skill="git">Git</span>
+                    <div class="dropdown">
+                        <h4>Experience with Git</h4>
+                        <a href="#PHY479">Quantum Computing Research</a>
+                        <a href="#CSC494">Hearing Aid Project</a>
+                        <a href="#CSC309">Code Sharing Platform</a>
+                        <a href="#CSC417">Physics Based Animation</a>
+                        <a href="#CSC207">Song Guessing Game</a>
+                    </div>
+                </li>
+                
+                <li><span class="skill-item" data-skill="latex">LaTeX</span>
+                    <div class="dropdown">
+                        <h4>Experience with LaTeX</h4>
+                        <a href="#PHY479">Quantum Computing Research</a>
+                        <a href="">CV/Resume</a>
+                        <a href="#PHY224">Practical Physics</a>
+                        <a href="#CSC343">Databases Course</a>
+                        <a href="#CSC258">Computer Organization Course</a>
+                        <a href="#CSC311">Machine Learning Course</a>
+                        <a href="#CSC240">Theory of Computation Course</a>
+                        <a href="#MAT223">Linear Algebra Course</a>
+                    </div>
+                </li>
+
+                <li><span class="skill-item" data-skill="linux">Linux</span>
+                    <div class="dropdown">
+                        <h4>Experience with Linux</h4>
+                        <a href="#PHY479">Quantum Computing Research</a>
+                        <a href="#CSC209">Systems Programming Course</a>
+                        <a href="#CSC417">Physics Based Animation</a>
+                    </div>
+                </li>
+
+                <li><span class="skill-item" data-skill="data analysis">Data Analysis</span>
+                    <div class="dropdown">
+                        <h4>Experience with Data Analysis</h4>
+                        <a href="#PHY479">Quantum Computing Research</a>
+                        <a href="#PHY408">Time Series Analysis</a>
+                        <a href="#CSC311">Machine Learning Course</a>
+                        <a href="#PHY224">Practical Physics</a>
+                    </div>
+                </li>
+
+                <li><span class="skill-item" data-skill="quantum computing">Quantum Computing</span>
+                    <div class="dropdown">
+                        <h4>Experience with Quantum Computing</h4>
+                        <a href="#PHY479">Quantum Computing Research</a>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7392447192029925377/" target="_blank">Qiskit Fall Fest</a>
+                        <a href="https://www.credly.com/users/jenny-moore.49a387bd" target="_blank">Quantum Certificates</a>
+                    </div>
+                </li>
+
+            </ul>
+            </div>
+            <div class="column">
+            <h3>Soft Skills</h3>
+                <ul>
+                    <li><span class="skill-item" data-skill="communication">Effective Communicator</span>
+                    <div class="dropdown">
+                        <h4>Experience with Communication</h4>
+                        <a href="#PHY479">Quantum Computing Research</a>
+                        <a href="">Peer Mentor Role</a>
+                        <a href="">Commons Assistant</a>
+                        <a href="">Orchestra</a>
+                        <a href="">String Quartets</a>
+                        <a href="#CSC309">Code Sharing Platform</a>
+                        <a href="#CSC207">Song Guessing Game</a>
+                        <a href="#CSC404">Video Game Design Course</a>
+                    </div>
+                    </li>
+
+                    <li><span class="skill-item" data-skill="collaboration">Team Player</span>
+                    <div class="dropdown">
+                        <h4>Experience with Collaboration</h4>
+                        <a href="#PHY479">Quantum Computing Research</a>
+                        <a href="">Peer Mentor Role</a>
+                        <a href="#CSC404">Video Game Design Course</a>
+                        <a href="#CSC309">Code Sharing Platform</a>
+                        <a href="#CSC207">Song Guessing Game</a>
+                        <a href="#CSC311">Machine Learning Course</a>
+                        <a href="">Orchestra</a>
+                        <a href="">String Quartets</a>
+                        <a href="">Music Coaching</a>
+                    </div>
+                    </li>
+
+                    <li><span class="skill-item" data-skill="mentorship">Mentor</span>
+                    <div class="dropdown">
+                        <h4>Experience with Mentorship</h4>
+                        <a href="#">Peer Mentor Role</a>
+                        <a href="">Music Coaching</a>
+                        <a href="">Commons Assistant</a>
+                    </div>
+                    </li>
+
+                    <li>Problem Solver</li>
+
+                    <li><span class="skill-item" data-skill="facilitation">Facilitator</span>
+                    <div class="dropdown">
+                        <h4>Experience with Facilitation</h4>
+                        <a href="#PHY479">Quantum Computing Research</a>
+                        <a href="#">Peer Mentor Role</a>
+                        <a href="">Music Coaching</a>
+                        <a href="">Commons Assistant</a>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="row">
+            <h2>Projects</h2>
+            <div class="column2">
+            <div class="list-container">
+                <div class="list-item" id="MSRG">
+                    <div class="list-header">
+                        <span class="list-title">Quantum Computing Research</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div style="display: flex; justify-content: center; gap: 20px; padding: 10px 0;">
+                        <img src="../images/Milestone5.png" alt="Description" width="40%" style="display: block;">
+                        <img src="../images/Milestone5.png" alt="Description" width="40%" style="display: block;">
+                    </div>
+
+                    <div class="list-content">
+                        <div class="list-content-inner">
+                            I've presented this research at 5 venues so far, often co-presenting with Aditya K. Rao:
+                            <ul>
+                                <li>A lightning talk at CS-CAN's Canadian Celebration of Women in Computing (<a href="https://cscan-infocan.ca/celebration-of-women-in-computing/" target="_blank">CAN-CWiC</a>)</li>
+                                <li>Two posters at <a href="https://qsimconference.org/" target="_blank">QSim 2025</a> hosted by IBM in New York City</li>
+                                <li>A poster at the annual general meeting held by Quantum Software Consortium (<a href="https://www.qscc.ca/" target="_blank">QSC</a>)</li>
+                                <li>A poster at University of Toronto's Applied Research in Action (<a href="https://mscac.utoronto.ca/aria/" target="_blank">ARIA</a>) Showcase</li>
+                                <li>A poster at the Undergraduate Engineering Research Day (<a href="https://undergrad.engineering.utoronto.ca/experiential-learning/undergraduate-engineering-research-day-unerd/" target="_blank">UnERD</a>)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="list-item" id="PHY354">
+                    <div class="list-header">
+                        <span class="list-title">Dr. Mario Remake</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <img src="images/Milestone5.png" alt="Pixelated doctor next to a pill bottle." width="50%" style="display: block; margin: 0 auto; padding: 10px 0;">
+                    <div class="list-content">
+                        <div class="list-content-inner">
+                            <i>Course Description:</i> Symmetry and conservation laws, stability and instability, generalized coordinates, Hamilton's principle, Hamilton's equations, phase space, Liouville's theorem, canonical transformations, Poisson brackets, Noether's theorem.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+            <div class="column2">
+
+            </div>
+
+            <!-- <div class="column">
+
+            </div> -->
+
+        </section>
+
+
+        <section id="courses" class="row">
+            <h2>Courses</h2>
+            <div class="column">
+            
+            <h3>Computer Science</h3>
+
+            <div class="list-container">
+            
+                <div class="list-item" id="CSC404">
+                    <div class="list-header">
+                        <span class="list-title">CSC404: Intro to Video Game Design (Current)</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-content-inner">
+                            <i>Course Project: </i> First game jam <a>here</a>. Design and implement a 3D indie video game in a team of 10-12 students.
+                            <br/><br/>
+                            <i>Course Description: </i> Combined course with OCAD and UofT Music. Concepts and techniques for the design and development of electronic games. History, social issues, and story elements. The business of game development and game promotion. Software engineering, artificial intelligence, and graphics elements. Level and model design. Audio elements. Practical assignments leading to team implementation of a complete game.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-item" id="CSC417">
+                    <div class="list-header">
+                        <span class="list-title">CSC417: Physics-Based Animation</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-content-inner">
+                            <i>Course Projects: </i> Rigid body simulation, collisions, fuilds, and coordinate descent. More details <a>here</a>.
+                            <br/><br/>
+                            <i>Course Description: </i>Rigid body simulation, elasticity simulation, cloth simulation, collision detection and resolution and fluid simulation. Along the way, we will explore the underlying mathematics of ordinary differential equations, discrete time integration, finite element methods and more.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-item" id="CSC494">
+                    <div class="list-header">
+                        <span class="list-title">CSC494: Computer Science Project</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-content-inner">
+                            AI for Adaptive Filtering in Hearing Aids, supervised by Prof. Steve Engels. 
+                            Research addressed concerns from hearing aid users () with a bayesian preference learning algorithm, with the intent of allowing users to adjust their settings at home for different environments.
+                            More details <a>here.</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-item" id="CSC311">
+                    <div class="list-header">
+                        <span class="list-title">CSC311: Intro to Machine Learning</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-content-inner">
+                            <i>Course Project: </i> Supervised learning model that predicts which food item a user is describing based on their responses to given questions. Outputs majority result of naive Bayes, logistic regression and decision tree models. Final test accuracy: 83.8%. Code not publicly available.
+                            <br/><br/>
+                            <i>Course Description: </i> An introduction to methods for automated learning of relationships on the basis of empirical data. Classification and regression using nearest neighbour methods, decision trees, linear models, and neural networks. Clustering algorithms. Problems of overfitting and of assessing accuracy.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-item" id="CSC343">
+                    <div class="list-header">
+                        <span class="list-title">CSC343: Intro to Databases</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-content-inner">
+                            <i>Course Description: </i>Introduction to database management systems. The relational data model. Relational algebra. Querying and updating databases: the query language SQL. Application programming with SQL. Integrity constraints, normal forms, and database design. Elements of database system technology: query processing, transaction management.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-item" id="CSC309">
+                    <div class="list-header">
+                        <span class="list-title">CSC309: Programming on the Web</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-content-inner">
+                        <i>Course Project: </i> <a href="https://scriptorium-rose.vercel.app/" target="_blank">Scriptorium</a>, code-sharing platform
+                        <br/>
+                        <br/>
+                        <i>Course Description: </i>Concepts underlying the development of programs that operate on the web; survey of technological alternatives; greater depth on some technologies. 
+                        Operational concepts of the internet and the web, static client content, dynamic client content, dynamically served content, n-tiered architectures, web development processes, and security on the web.
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-item" id="CSC263">
+                    <div class="list-header">
+                        <span class="list-title">CSC263: Data Structures and Analysis</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-content-inner">
+                            <i>Course Description: </i>Algorithm analysis: worst-case, average-case, and amortized complexity. 
+                            Expected worst-case complexity, randomized quicksort and selection. 
+                            Standard abstract data types, such as graphs, dictionaries, priority queues, and disjoint sets. 
+                            A variety of data structures for implementing these abstract data types, such as balanced search trees, hashing, heaps, and disjoint forests. 
+                            Design and comparison of data structures. 
+                            Introduction to lower bounds.
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item" id="CSC258">
+                    <div class="list-header">
+                        <span class="list-title">CSC258: Computer Organization</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-content-inner">
+                            <i>Course Project: </i> Dr. Mario Remake
+                            <br/> <br/>
+                            <i>Course Description:</i> Computer structures, machine languages, instruction execution, addressing techniques, and digital representation of data. 
+                            Computer system organization, memory storage devices, and microprogramming. 
+                            Block diagram circuit realizations of memory, control and arithmetic functions. 
+                            There are a number of laboratory periods in which students conduct experiments with digital logic circuits.
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-item" id="CSC209">
+                    <div class="list-header">
+                        <span class="list-title">CSC209: Software Tools and Systems Programming</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-content-inner">
+                            <i>Course Description:</i>
+                            Software techniques in a Unix-style environment, using scripting languages and a machine-oriented programming language (C). What goes on in the operating system when programs are executed. 
+                            Core topics: creating and using software tools, pipes and filters, file processing, shell programming, processes, system calls, signals, basic network programming.
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-item" id="CSC240">
+                    <div class="list-header">
+                        <span class="list-title">CSC240: Enriched Intro to the Theory of Computation</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-content-inner">
+                            <i>Course Description:</i> The rigorous application of logic and proof techniques to Computer Science. 
+                            Propositional and predicate logic; mathematical induction and other basic proof techniques; correctness proofs for iterative and recursive algorithms; recurrence equations and their solutions (including the Master Theorem); introduction to automata and formal languages.  
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        
+            </div>
+            <div class="column">
+
+            <h3>Physics</h3>
+                <div class="list-container">
+                    <div class="list-item" id="PHY479">
+                        <div class="list-header">
+                            <span class="list-title">PHY479: Physics Project (Current) </span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="list-content">
+                            <div class="list-content-inner">
+                                An individual experimental or theoretical research project undertaken with the advice of, and under the direction of, a faculty member: an extension of my summer research experience <a>here</a>, as a research project supervised by Prof. Hans-Arno Jacobsen.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" id="PHY408">
+                        <div class="list-header">
+                            <span class="list-title">PHY408: Time Series Analysis (Current) </span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="list-content">
+                            <div class="list-content-inner">
+                                <i>Course Description:</i> The analysis of digital sequences; filters; the Fourier Transform; windows; truncation effects; aliasing; auto and cross-correlation; stochastic processes, power spectra; least squares filtering; application to real data series and experimental design.
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" id="PHY456">
+                        <div class="list-header">
+                            <span class="list-title">PHY456: Quantum Mechanics II</span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="list-content">
+                            <div class="list-content-inner">
+                                <i>Course Description:</i> Quantum dynamics in Heisenberg and Schrödinger pictures; 
+                                WKB approximation; variational method; time-independent perturbation theory; spin; addition of angular momentum; 
+                                time-dependent perturbation theory; scattering.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" id="PHY356">
+                        <div class="list-header">
+                            <span class="list-title">PHY356: Quantum Mechanics I </span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="list-content">
+                            <div class="list-content-inner">
+                                <i>Course Description:</i> The general structure of wave mechanics; eigenfunctions and eigenvalues; operators; orbital angular momentum; 
+                                spherical harmonics; central potential; separation of variables; hydrogen atom; Dirac notation; operator methods; harmonic oscillator and spin.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" id="PHY354">
+                        <div class="list-header">
+                            <span class="list-title">PHY354: Advanced Classical Mechanics </span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="list-content">
+                            <div class="list-content-inner">
+                                <i>Course Description:</i> Symmetry and conservation laws, stability and instability, generalized coordinates, Hamilton's principle, Hamilton's equations, phase space, Liouville's theorem, canonical transformations, Poisson brackets, Noether's theorem.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" id="PHY256">
+                        <div class="list-header">
+                            <span class="list-title">PHY256: Intro to Quantum Physics </span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="list-content">
+                            <div class="list-content-inner">
+                                <i>Course Description:</i> Failures of classical physics; the Quantum revolution; Stern-Gerlach effect; harmonic oscillator; uncertainty principle; interference packets; scattering and tunneling in one-dimension.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" id="PHY254">
+                        <div class="list-header">
+                            <span class="list-title">PHY254: Classical Mechanics</span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="list-content">
+                            <div class="list-content-inner">
+                                <i>Course Description:</i> The course analyzes the linear, nonlinear and chaotic behaviour of classical mechanical systems such as harmonic oscillators, rotating bodies, and central field systems. The course will develop the analytical and numerical tools to solve such systems and determine their basic properties. 
+                                The course will include mathematical analysis, numerical exercises using Python, and participatory demonstrations of mechanical systems.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" id="PHY250">
+                        <div class="list-header">
+                            <span class="list-title">PHY250: Electricity and Magnetism </span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="list-content">
+                            <div class="list-content-inner">
+                                <i>Course Description:</i> An introductory course in Electromagnetism. Topics include: Point charges, Coulomb’s law, electrostatic field and potential, Gauss's Law, conductors, electrostatic energy, magnetostatics, Ampere's Law, Biot-Savart Law, the Lorentz Force Law, Faraday’s Law, Maxwell's equations in free space.
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" id="PHY224">
+                        <div class="list-header">
+                            <span class="list-title">PHY224: Practical Physics I </span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="list-content">
+                            <div class="list-content-inner">
+                                <i>Course Description:</i> Develops the core practical experimental and computational skills necessary to do physics. 
+                                Students tackle simple physics questions involving mathematical models, computational simulations and solutions, 
+                                experimental measurements, data and uncertainty analysis.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="column">
+            <h3>Math</h3>
+                <div class="list-container">
+                    <div class="list-item" id="MAT315">
+                        <div class="list-header">
+                            <span class="list-title">MAT315: Introduction to Number Theory </span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="list-content">
+                            <div class="list-content-inner">
+                                <i>Course Description:</i> Elementary topics in number theory: arithmetic functions; polynomials over the residue classes modulo m, characters on the residue classes modulo m; quadratic reciprocity law, representation of numbers as sums of squares.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" id="MAT334">
+                        <div class="list-header">
+                            <span class="list-title">MAT334: Complex Variables </span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="list-content">
+                            <div class="list-content-inner">
+                                <i>Course Description:</i> Theory of functions of one complex variable, analytic and meromorphic functions. Cauchy's theorem, residue calculus, conformal mappings, introduction to analytic continuation and harmonic functions.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" id="STA237">
+                        <div class="list-header">
+                            <span class="list-title">STA237: Prob, Stat and Data Analysis I </span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="list-content">
+                            <div class="list-content-inner">
+                                <i>Course Description:</i> An introduction to probability using simulation and mathematical frameworks, with emphasis on the probability needed for more advanced study in statistical practice. 
+                                Topics covered include probability spaces, random variables, discrete and continuous probability distributions, probability mass, density, and distribution functions, expectation and variance, independence, conditional probability, the law of large numbers, the central limit theorem, sampling distributions. 
+                                Computer simulation used extensively for calculations and to guide the theoretical development.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" id="MAT235">
+                        <div class="list-header">
+                            <span class="list-title">MAT235: Multivariable Calculus  </span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="list-content">
+                            <div class="list-content-inner">
+                                <i>Course Description:</i> Parametric equations and polar coordinates. Vectors, vector functions and space curves. Differential and integral calculus of functions of several variables. Line integrals and surface integrals and classic vector calculus theorems. Examples from life sciences and physical science applications.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" id="MAT244">
+                        <div class="list-header">
+                            <span class="list-title">MAT244: Ordinary Differential Equations </span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="list-content">
+                            <div class="list-content-inner">
+                                <i>Course Description:</i> First order ordinary differential equations: 
+                                Direction fields, integrating factors, separable equations, homogeneous equations, exact equations, autonomous equations, 
+                                modeling. Existence and uniqueness theorem. 
+                                Higher order equations: Constant coefficient equations, reduction of order, Wronskian, method of undetermined coefficients, 
+                                variation of parameters. Solutions by series and integrals. 
+                                First order linear systems, fundamental matrices. Non-linear equations, phase plane, stability. 
+                                Applications in life and physical sciences and economics.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" id="MAT223">
+                        <div class="list-header">
+                            <span class="list-title">MAT223: Linear Algebra </span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="list-content">
+                            <div class="list-content-inner">
+                                <i>Course Description:</i> A first course on linear algebra in R^n emphasizing the interplay between algebraic and geometric perspectives. 
+                                Topics include systems of equations, Gaussian elimination, representations of lines and planes, dot products, subspaces and translated subspaces, 
+                                bases and change of basis, projections, the rank and nullity of a linear transformation, the rank/nullity/row space/column space of a matrix, 
+                                matrix inverses, determinants, eigenvectors and eigenvalues, and matrix diagonalization. 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" id="MAT157">
+                        <div class="list-header">
+                            <span class="list-title">MAT157: Analysis I (Calculus) </span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="list-content">
+                            <div class="list-content-inner">
+                                <i>Course Description:</i> A theoretical course in calculus; emphasizing proofs and techniques. 
+                                Elementary logic, limits and continuity, least upper bounds, intermediate and extreme value theorems. 
+                                Derivatives, mean value and inverse function theorems. 
+                                Integrals, fundamental theorem, elementary transcendental functions. 
+                                Techniques of integration. Taylor's theorem; sequences and series; uniform convergence and power series. 
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Viola - Playing classical music in orchestral and chamber music settings.</li>
+                <li>Painting - I like to use acrylic paint and mostly do landscapes!</li>
+                <li>Cooking - Everyone can cook! I like to try new recipes from different cuisines.</li>
+                <li>Sketching - Mostly things around me so I can capture memories.</li>
+                <li>Hiking - Mountains are especially fun for the view.</li>
+                <li>Reading - Currently very into murder mystery novels.</li>
+                <li>Baking - Not as fun as cooking but very tasty results.</li>
+                <li>Thrifting - Reduce, reuse, recycle! Love to save money and create killer looks.</li>
+            </ul>
+        </section> -->
+
+        <script src="../scripts.js"></script>
+
+    </body>
+    <section id="contact">
+        
+            <h2>Contact</h2>
+            <p>You can contact me at <a href="mailto:jenny.moore@mail.utoronto.ca">jenny.moore at mail.utoronto.ca</a> or <a>jmoct222 at gmail.com</a></p>
+    </section>
+    <footer>
+        <p> &copy; 2026 Jenny Moore</p>
+    </footer>
+
+</html>
