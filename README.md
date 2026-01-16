@@ -1,14 +1,9 @@
 # personal-website
-A website showcasing some of the projects I've worked on! Currently a barebones work-in-progress. 
+A website showcasing some of the projects I've worked on! Currently a work-in-progress. 
 
-V1 Saving Links here in the README for future reference.
-
-## Published:
-- [Hatformer](https://play.unity.com/en/games/80f35d34-bea2-4b58-a7fe-49ea2140bc4e/game-jam-1-hatformer) solo platformer made in Unity
-- [Hearing Aid Adjustment Simulator](https://hearing-aid-project-preference.streamlit.app/) Preference-based learning audio processing model to optimize gain settings 
-- [Scriptorium]() Code sharing platform
-
-## Want to Publish:
-- Videos from physics-based animation renders
-- Dr. Mario spin-off (video)
-- Heardle?
+TODO:
+- [] Upload physics-based animation videos
+- [] Fix video embeds
+- [] Add non-technical experience
+- [] Create music page
+- [] Create about me page
