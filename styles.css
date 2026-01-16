@@ -526,3 +526,10 @@ i {
 #projects .list-item:last-child {
     margin-bottom: 0;
 }
+
+#music-about, #showcase, #playlist p {
+    font-size: large; 
+    display: block; 
+    margin-left: 1%; 
+    color: #333;
+}
