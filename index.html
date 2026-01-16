@@ -3,25 +3,10 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css"/>
-        <!-- <link rel="script" href="scripts.js"/> -->
         <title>Jenny Moore</title>
     </head>
 
     <body>
-        <!-- <header>
-            <h1>Jenny Moore</h1>
-        </header> -->
-<!-- 
-        <div class="sidebar">
-            <nav>
-                <h2>Pages</h2>
-                <a href="index.html">Home</a>
-                <a href="pages/portfolio.html">Portfolio</a>
-                <a href="#projects">Music</a>
-                <a href="#contact">About Me</a>
-            </nav>
-        </div> -->
-
         <div class="header">
             <div class="hamburger">
                 <span></span>
@@ -36,46 +21,55 @@
             <ul class="sidebar-nav">
                 <li><a href="#home">Home</a></li>
                 <li><a href="pages/portfolio.html">Portfolio</a></li>
-                <!-- <li><a href="pages/music.html">Music</a></li> -->
-                <!-- <li><a href="pages/about.html">About Me</a></li> -->
-                <!-- <li><a href="pages/contact.html">Contact</a></li> -->
             </ul>
         </div>
         <div class="overlay"></div>
-        <h1 style="font-size: 300%; color: rgb(4, 73, 84);">Jenny Moore</h1>
 
-        <section id="about">
-            <h2>About Me</h2> 
-            <p> Hi, I'm Jenny! I'm an international student from the US studying Physics and Computer Science at the University of Toronto. I'm interested in quantum computing. I love classical music and have been playing the viola for 11 years! 
-                At UofT, I am in the Skule Orchestra and 2 string quartets: Iron Strings and the Vivo String Quartet. I am also a peer mentor for the Computer Science Second Year Learning Community! I have worked in retail for a few years 
-            at Forever 21 and Anthropologie and have coached young musicians at Chamber Music Central.</p>   
-        </section>
+        <div class="page-wrapper">            
+            <div class="main-content">
+
+                  <h1 style="font-size: 300%; color: rgb(4, 73, 84);">Jenny Moore</h1>
+
+            <section id="about">
+                <h2 style="font-size: x-large;">Quantum Computing Researcher | Full-Stack Developer | String Quartet Musician</h2> 
+                <img src="images/headshot.jpg" width="25%" style="display: block; float: left; margin-right: 2%;">
+                <p style="font-size: x-large; display: block; margin-left: 1%; color: #333;">Hi, I'm Jenny! Welcome to my website.</p>   
+                <br>
+                <p style="font-size: x-large; display: block; margin-left: 1%; color: #333;">I'm do quantum computing research, full-stack development, and string quartet music, among other things.</p>
+                <br>
+                <p style="font-size: x-large; display: block; margin-left: 1%; color: #333;">I'm a fourth year Computer Science and Physics student at the University of Toronto, graduating in May of 2026. 
+                    Most of my experience is in scientific computing (quantum computing research, data collection and analysis) but I dabble in many different areas. 
+                    I'm always looking for new ways to combine my physics and computer science knowledge!</p>   
+                <br>
+                <p style="font-size: x-large; display: block; margin-left: 1%; color: #333;">You can find more information about my experience on my subpages (menu in the top left).</p>
+            </section>
+
+            </div>
+            
+            <div class="right-sidebar">
+                <div class="highlight-card">
+                    <h3>Contact</h3>
+                    <p>School email: <div style="color: rgb(75, 163, 148); font-size: 14px; font-weight: bold;">jenny.moore at mail.utoronto.ca</div></p>
+                    <p>Personal email: <div style="color: rgb(75, 163, 148); font-size: 14px; font-weight: bold;">jmoct222 at gmail.com</div></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/jenny-r-moore/" target="_blank">https://www.linkedin.com/in/jenny-r-moore/</a></p>
+                    <p>GitHub: <a href="https://github.com/jenny-moore" target="_blank">https://github.com/jenny-moore</a></p>
+                </div> <!--End highlight-card-->
 
 
-        <!-- <section id="hobbies">
-            <h2>Hobbies</h2>
-            <ul>
-                <li>Viola - Playing classical music in orchestral and chamber music settings.</li>
-                <li>Painting - I like to use acrylic paint and mostly do landscapes!</li>
-                <li>Cooking - Everyone can cook! I like to try new recipes from different cuisines.</li>
-                <li>Sketching - Mostly things around me so I can capture memories.</li>
-                <li>Hiking - Mountains are especially fun for the view.</li>
-                <li>Reading - Currently very into murder mystery novels.</li>
-                <li>Baking - Not as fun as cooking but very tasty results.</li>
-                <li>Thrifting - Reduce, reuse, recycle! Love to save money and create killer looks.</li>
-            </ul>
-        </section> -->
+                <div class="highlight-card">
+                    <h3>Highlights</h3>
+                    <p>Quantum Computing • Scientific Computing • Web Development • Video Game Development • String Quartet Musician</p>
+                </div><!--End highlight-card-->
+            </div>
+        </div>
 
+      
         <script src="scripts.js"></script>
 
     </body>
-    <section id="contact">
-        
-            <h2>Contact</h2>
-            <p>You can contact me at <a href="mailto:jenny.moore@mail.utoronto.ca">jenny.moore at mail.utoronto.ca</a> or <a>jmoct222 at gmail.com</a></p>
-    </section>
+
     <footer>
-        <p> &copy; 2026 Jenny Moore</p>
+        <p> Jenny Moore: jenny.moore at mail.utoronto.ca</p>
     </footer>
 
 </html>

@@ -5,6 +5,42 @@
 }
 
 
+
+.skill-item {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: 0.1s;
+    display: block;
+    position: static;
+}
+
+.skill-item:hover {
+    background: #afcde3;
+}
+
+.skill-item.active {
+    background: #6e93b2;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 1%;
+    /* transform: translateX(-50%); */
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 15px;
+    margin-top: 5px;
+    min-width: 250px;
+    max-width: 350px;
+    z-index: 1000;
+    white-space: normal;
+}
+
 /* Header with hamburger */
 .header {
     background: #4a6b67;
@@ -169,8 +205,9 @@ h3 {
 }
 
 a {
+    color: rgb(75, 163, 148);
     text-decoration: none;
-    color: rgb(2, 142, 118);
+    font-weight: bold;
 }
 
 nav {
@@ -190,7 +227,7 @@ a:hover {
 
 section {
     background-color: rgb(218, 246, 233);
-    margin: 5%;
+    margin: 2%;
     padding: 1.5%;
 }
 
@@ -205,7 +242,6 @@ li {
     /* font-style: italic; */
     margin: 1%;
     padding: 1%;
-    
 }
 
 footer {
@@ -224,7 +260,7 @@ textarea {
     margin: 1%;
 }
 
-.skill-item {
+/* .skill-item {
     cursor: pointer;
     padding: 8px 12px;
     border-radius: 4px;
@@ -238,9 +274,9 @@ textarea {
 
 .skill-item.active {
     background: #6e93b2;
-}
+} */
 
-.dropdown {
+/* .dropdown {
             display: none;
             position: absolute;
             top: 100%;
@@ -253,7 +289,7 @@ textarea {
             margin-top: 5px;
             min-width: 250px;
             z-index: 1000;
-        }
+        } */
 
 .dropdown.show {
     display: block;
@@ -376,5 +412,117 @@ i {
 }
 
 .list-item.active .list-content {
-    max-height: 500px;
+    max-height: 5000px;
+}
+
+/* Main container wrapper */
+.page-wrapper {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Left accent bar */
+.left-accent {
+    width: 60px;
+    background: linear-gradient(180deg, #4a6b67 0%, #afe3d7 100%);
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+/* Main content area */
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Right sidebar with highlights */
+.right-sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 20px; /* Distance from top when scrolling */
+    align-self: flex-start;
+    max-height: calc(100vh - 40px); /* Prevents it from being taller than viewport */
+    overflow-y: auto; /* Allows scrolling if sidebar content is too tall */
+}
+
+.highlight-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-left: 4px solid #4a6b67;
+}
+
+.highlight-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #4a6b67;
+    background: none;
+    padding: 0;
+}
+
+.highlight-card p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.highlight-card ul {
+    margin: 10px 0 0 0;
+    padding-left: 20px;
+}
+
+.highlight-card li {
+    margin: 5px 0;
+    padding: 0;
+    background: none;
+    font-size: 14px;
+    list-style-type: disc;
+}
+
+/* Make it responsive */
+@media screen and (max-width: 1200px) {
+    .page-wrapper {
+        flex-direction: column;
+    }
+    
+    .left-accent {
+        display: none;
+    }
+    
+    .right-sidebar {
+        width: 100%;
+    }
+}
+
+#about, #skills, #projects, #courses, #contact {
+    scroll-margin-top: 100px;
+}
+
+#projects .list-container {
+    background: transparent; /* CHANGE from white */
+    border-radius: 8px;
+    overflow: visible; /* CHANGE from hidden */
+    margin-left: 2%;
+    margin-right: 3%;
+    box-shadow: none; /* REMOVE shadow from container */
+}
+
+#projects .list-item {
+    border-bottom: none; /* REMOVE border */
+    margin-bottom: 20px; /* Space between cards */
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* MOVE shadow to individual items */
+}
+
+#projects .list-item:last-child {
+    margin-bottom: 0;
 }

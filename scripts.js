@@ -18,6 +18,14 @@ document.querySelectorAll('.skill-item').forEach(item => {
         if (dropdown) {
             dropdown.classList.toggle('show');
             this.classList.toggle('active');
+
+                if (dropdown.classList.contains('show')) {
+                    const rect = this.getBoundingClientRect();
+                    dropdown.style.position = 'fixed';
+                    dropdown.style.top = (rect.bottom + 5) + 'px';
+                    dropdown.style.left = rect.left + 'px';
+                }
+                
             currentDropdown = dropdown.classList.contains('show') ? dropdown : null;
         }
     });
@@ -132,3 +140,19 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
         document.querySelectorAll('.sidebar-nav a').forEach(link => {
             link.addEventListener('click', closeSidebar);
         });
+
+        // Fix anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
