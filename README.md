@@ -3,7 +3,7 @@ A website showcasing some of the projects I've worked on! Currently a work-in-pr
 
 TODO:
 - [ ] Upload physics-based animation videos
-- [ ] Fix video embeds
+- [x] Fix video embeds
 - [ ] Add non-technical experience
-- [ ] Create music page
+- [x] Create music page
 - [ ] Create about me page
